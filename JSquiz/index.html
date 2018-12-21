@@ -1,0 +1,100 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dorothy's Sick Quiz</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+    <link rel="style-sheet" href="dist/pretty-checkbox.min.css"/>
+    <script src="main.js"></script>
+  </head>
+
+
+  <body class="container">
+    <div class="header">
+      <h1 class="animated pulse delay-2s">
+        This is the hardest quiz evar!
+      </h1>
+    </div>
+    
+
+    <form align="center" id="quiz" name="quiz">
+      <p>When is Dorothy's birthday?</p>
+      <input id="textbox" type="text" name="question1" />
+
+      <p>What is Dorothy's favourite food?</p>
+      <div class="pretty p-icon p-round p-plain p-smooth">
+          <input
+          type="radio"
+          id="mc1"
+          name="question2"
+          value="Salted Caramel Icecream">
+        <div class="state p-success-o">
+          <i class="icon mdi mdi-heart"></i>  
+          <label for="mc1">
+            Salted Caramel Icecream
+          </label>
+        </div>
+      </div>
+      <br />
+
+      <div class="pretty p-icon p-round p-plain p-smooth">
+          <input
+          type="radio"
+          id="mc2"
+          name="question2"
+          value="Mint Chocolate Icecream">
+          <div class="state p-success-o">
+            <i class="icon mdi mdi-heart"></i>  
+      <label for="mc2">
+        Mint Chocolate Icecream
+      </label>
+      </div>
+      </div>
+      <br />
+
+      <p>What is Dorothy's special talent?</p>
+      <div class="pretty p-icon p-round p-plain p-smooth">
+          <input
+          type="radio"
+          id="mc3"
+          name="question3"
+          value="Magic Tricks">
+          <div class="state p-success-o">
+            <i class="icon mdi mdi-heart"></i>  
+      <label for="mc3">
+        Magic Tricks</label>
+        </div>
+        </div>
+      <br />
+      <div class="pretty p-icon p-round p-plain p-smooth">
+        <input
+            type="radio"
+            id="mc4"
+            name="question3"
+            value="Mind Reading">
+          <div class="state p-success-o">
+            <i class="icon mdi mdi-heart"></i>  
+      <label for="mc4">
+        Mind Reading</label>
+        </div>
+        </div>
+        <br/>
+
+      <input
+        id="button"
+        type="button"
+        value="That was hard!"
+        onclick="check();"
+      />
+    </form>
+    <div id="after_submit">
+      <p id="message"></p>
+      <p id="number_correct"></p>
+      <img id="picture"></p>
+    </div>
+  </body>
+</html>
